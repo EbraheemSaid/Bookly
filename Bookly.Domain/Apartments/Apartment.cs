@@ -1,5 +1,4 @@
 ﻿using Bookly.Domain.Abstractions;
-using Bookly.Domain.Apartments.Records;
 using System;
 using System.Collections.Generic;
 using System.Linq;
