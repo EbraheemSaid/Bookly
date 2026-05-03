@@ -1,4 +1,4 @@
-﻿namespace Bookly.Domain.Apartments
+﻿namespace Bookly.Domain.Shared
 {
     public record Currency
     {

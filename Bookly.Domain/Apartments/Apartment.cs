@@ -1,4 +1,5 @@
 ﻿using Bookly.Domain.Abstractions;
+using Bookly.Domain.Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +24,7 @@ namespace Bookly.Domain.Apartments
         public Money Price { get; private set; } = price;
         public Money CleaningFee { get; private set; } = cleaningFee;
 
-        public DateTime? LastBookedOnUtc { get; private set; }
+        public DateTime? LastBookedOnUtc { get; internal set; }
 
         public List<Amenity> Amenities { get; private set; } = amenities;
     }
