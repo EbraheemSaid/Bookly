@@ -61,7 +61,7 @@ namespace Bookly.Domain.Bookings
             var pricingDetails = pricingService.CalculatePrice(apartment, duration);
 
             var booking = new Booking(
-                Guid.NewGuid(),
+                   Guid.NewGuid(),
                    apartment.Id,
                    userId,
                    duration,

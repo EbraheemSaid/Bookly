@@ -30,3 +30,5 @@ namespace Bookly.Domain.Bookings
             "The booking has already started");
     }
 }
+
+
