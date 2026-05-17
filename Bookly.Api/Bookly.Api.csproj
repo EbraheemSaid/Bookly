@@ -15,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Bookly.Application\Bookly.Application.csproj" />
+    <ProjectReference Include="..\Bookly.Infrastructure\Bookly.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
