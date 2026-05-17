@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookly.Application", "Bookl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookly.Infrastructure", "Bookly.Infrastructure\Bookly.Infrastructure.csproj", "{43FEA7AB-D76F-4427-89BF-E3AF360A470B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookly.Api", "Bookly.Api\Bookly.Api.csproj", "{A8C7AF0B-A4AB-485A-BA39-140A669F643A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{43FEA7AB-D76F-4427-89BF-E3AF360A470B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43FEA7AB-D76F-4427-89BF-E3AF360A470B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43FEA7AB-D76F-4427-89BF-E3AF360A470B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C7AF0B-A4AB-485A-BA39-140A669F643A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C7AF0B-A4AB-485A-BA39-140A669F643A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C7AF0B-A4AB-485A-BA39-140A669F643A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C7AF0B-A4AB-485A-BA39-140A669F643A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{30C2D5DF-38E6-45BA-BE0F-0FECBE985EBF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{79AE89CC-DBCA-4F2B-9D68-4603C56CD0C7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{43FEA7AB-D76F-4427-89BF-E3AF360A470B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{A8C7AF0B-A4AB-485A-BA39-140A669F643A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98ECFA91-B268-40A7-A334-4B53464E6573}
