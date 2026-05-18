@@ -3,7 +3,8 @@
     "http": {
       "commandName": "Project",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ConnectionStrings__Database": "Host=localhost;Port=5432;Database=bookly;Username=postgres;Password=postgres"
       },
       "dotnetRunMessages": true,
       "applicationUrl": "http://localhost:5219"
@@ -11,22 +12,29 @@
     "https": {
       "commandName": "Project",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ConnectionStrings__Database": "Host=localhost;Port=5432;Database=bookly;Username=postgres;Password=postgres"
       },
       "dotnetRunMessages": true,
       "applicationUrl": "https://localhost:7080;http://localhost:5219"
     },
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "launchBrowser": true,
+      "launchUrl": "http://localhost:8080/scalar/v1",
+      "dockerComposeProfiles": [],
+      "composeLaunchServiceName": "bookly.api",
+      "serviceUrl": "http://localhost:8080/scalar/v1",
+      "composeLaunchAction": "LaunchBrowser"
+    },
     "Container (Dockerfile)": {
       "commandName": "Docker",
-      "launchBrowser": true, // 1. Forces the browser to open
-      "launchUrl": "{Scheme}://localhost:8001/scalar/v1", // 2. Hardcodes host port 8001
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
         "ASPNETCORE_HTTPS_PORTS": "8081",
         "ASPNETCORE_HTTP_PORTS": "8080"
       },
-      "httpPort": 8000, // 3. Binds local HTTP to port 8000
-      "sslPort": 8001, // 4. Binds local HTTPS to port 8001
+      "publishAllPorts": true,
       "useSSL": true
     }
   },

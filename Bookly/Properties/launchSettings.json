@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "bookly.api": "StartDebugging"
+      },
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchUrl": "http://localhost:8080/scalar/v1",
+      "composeLaunchServiceName": "bookly.api"
+    }
+  }
+}

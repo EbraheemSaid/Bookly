@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  bookly.api:
+    image: ${DOCKER_REGISTRY-}booklyapi
+    container_name: bookly-api
+    build:
+      context: .
+      dockerfile: Bookly.Api/Dockerfile
+    depends_on:
+      bookly.database:
+        condition: service_healthy
+    networks:
+      - bookly-network
+
+  bookly.database:
+    image: postgres:latest
+    container_name: bookly-db
+    environment:
+      - POSTGRES_DB=bookly
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - bookly-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres-data:
+
+networks:
+  bookly-network:
+    driver: bridge

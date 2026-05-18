@@ -15,6 +15,10 @@ namespace Bookly.Domain.Users
         public LastName LastName { get; private set; }
         public Email Email { get; private set; }
 
+        private User()
+        {
+        }
+
         private User(Guid id, FirstName firstName, LastName lastName, Email email) : base(id)
         {
             FirstName = firstName;

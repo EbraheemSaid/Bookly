@@ -1,0 +1,29 @@
+//{
+//  "profiles": {
+//    "Docker Compose": {
+//      "commandName": "DockerCompose",
+//      "commandVersion": "1.0",
+//      "serviceActions": {
+//        "bookly.api": "StartDebugging"
+//      },
+//      "launchBrowser": true,
+//      "launchUrl": "{Scheme}://localhost:8001/scalar/v1",
+//      "environmentVariables": {
+//        "ASPNETCORE_ENVIRONMENT": "Development"
+//      }
+//    }
+//  }
+//}
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchUrl": "http://localhost:8080/scalar/v1",
+      "serviceActions": {
+        "bookly.api": "StartDebugging"
+      }
+    }
+  }
+}
